@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="top.css">
+    <style>
+    
+    *{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .links{
+        font-weight: 700;
+    }
+        .about-container{
+    width: 50%;
+    min-height: 80vh;
+    position: absolute;
+    background-color: #F5F5DC;
+    box-shadow: 24px 24px 30px #6d8dad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    margin-left: 330px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+input[type=text],input[type=date],input[type=email],input[type=tel],textarea,select {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: #89c8dd;
+  background-color: white;
+}
+
+.no-outline:focus {
+  outline: none;
+  
+}
+::placeholder {
+  color: #89c8dd;
+  font-weight: bolder;
+}
+
+label{
+    color: #4c9bb6;
+    font-weight: bolder;
+}
+
+input[type=submit]{
+    padding: 15px 40px;
+    border: none;
+    background-color:  rebeccapurple;
+    font-size: 20px;
+    margin: 30px 0px;
+    border-radius: 5px;
+    color: white;
+    transition: .5s all ease-in-out;
+    border: 2px solid transparent;
+}
+input[type=submit]:hover{
+    background-color: transparent;
+    border: 2px solid rebeccapurple;
+    color: rebeccapurple;
+}
+li{
+    color: #4c9bb6;
+    font-weight: bolder;
+
+}
+ol{
+    padding-left: 17px;
+}
+.big-circle{
+    background-color: #eb77c4;
+    width: 500px;
+    height: 500px;
+    border-radius: 60%;
+    position: absolute;
+    top: 1050px;
+    left: -150px;
+    transform: translate(200px, 200px);
+}
+.big-circle1{
+    background-color: #eb77c4;
+    width: 500px;
+    height: 500px;
+    border-radius: 60%;
+    position: absolute;
+    bottom: 50px;
+    left: 700px;
+    transform: translate(200px, 200px);
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar hidden-class" id="navbar">
+            <div class="nav-logo">
+                <div class="nav-left-side">
+                    
+                    <h3 style="font-family: 'Poppins', sans-serif;">Elite Gardens</h3>
+                </div>
+            </div>
+            <div class="links">
+               
+                    
+                    <a href="home.html">Home</a>
+            
+               
+                    
+                    <a href="about.html">About</a>
+               
+              
+                   
+                    <a href="product.html">Products</a>
+               
+                    
+                <a href="news.html">News</a>
+            
+                
+                    
+                    <a href="contact.html">Contact</a>
+             
+               
+            </div>
+        </div>
+    </nav>
+    <div class="big-circle"></div>
+    <div class="big-circle1"></div>
+    <div class="about-container">
+        
+    <form action="">
+        <h3>Name</h3><br>
+        <input type="text" name="name" placeholder="Enter Name">
+        <br><br>
+        <h3>Phone Number</h3><br>
+        <input type="tel" name="number" placeholder="Enter Number">
+        <br><br>
+        <h3>E-Mail</h3><br>
+        <input type="email" name="mail" placeholder="Enter E-Mail" required>
+        <br><br>
+        <h3>D.O.B</h3><br>
+        <input type="date" id="birthday" name="birthday">
+        <br><br>
+        <h3>Address</h3><br>
+        <textarea name="Address" id="" cols="50" rows="10" placeholder="Enter Residential Address"></textarea>
+        <br><br>
+        <h3>Gender</h3><br>
+        <input type="radio" id="a1" name="gender" value="male">
+        <label for="a1">Male</label><br>
+        <input type="radio" id="a2" name="gender" value="female">
+        <label for="a2">Female</label><br>
+        <input type="radio" id="a3" name="gender" value="other">
+        <label for="a3">Others</label>
+        <br><br>
+        <h3>How do you feel about a community garden?</h3><br>
+        <input type="radio" id="a1" name="q1" value="It's a good idea - I support it">
+        <label for="a1">It's a good idea - I support it</label><br>
+        <input type="radio" id="a2" name="q1" value="I like the idea but already have my own garden">
+        <label for="a2">I like the idea but already have my own garden</label><br>
+        <input type="radio" id="a3" name="q1" value="I'm not enthusiastic but it is ok with me ">
+        <label for="a3">I'm not enthusiastic but it is ok with me</label>
+        <br>
+        <input type="radio" id="a4" name="q1" value="others">
+        <label for="a4">Others (Please Specify)</label>
+        <input type="text" name="others">
+        <br><br>
+        <h3>How far would you travel to participate in a community garden?</h3><br>
+        <input type="radio" id="a1" name="q2" value="1-3 miles">
+        <label for="a1">1-3 miles</label><br>
+        <input type="radio" id="a3" name="q2" value="3+ Miles">
+        <label for="a3">3+ Miles</label><br>
+        <input type="radio" id="a2" name="q2" value="Five blocks">
+        <label for="a2">Five blocks</label><br>
+        <input type="radio" id="a3" name="q2" value="Two blocks">
+        <label for="a3">Two blocks</label>
+        <br>
+        <input type="radio" id="a4" name="q2" value="others">
+        <label for="a4">Others (Please Specify)</label>
+        <input type="text" name="others">
+        <br><br>
+        <h3>I am currently involved in some scale of gardening (check all that apply)</h3><br>
+        <input type="checkbox" id="o1" name="o1" value="Home garden">
+        <label for="o1">Home garden</label><br>
+        <input type="checkbox" id="o2" name="o2" value="School garden (specify which school)">
+        <label for="o2">School garden (specify which school)</label><br>
+        <input type="checkbox" id="o3" name="o3" value="Demonstration garden (please specify location)">
+        <label for="o3">Demonstration garden (please specify location)</label><br>
+        <input type="checkbox" id="o4" name="o4" value="Community Garden">
+        <label for="o4">Community garden (Please specify location)</label><br>
+    
+        <input type="text" name="location">
+        <label for="location">Enter Location</label>
+        <br><br><br>
+        <h3>Frequently Used Gardening Equipments</h3><br>
+        <input list="Equipments" name="equip" id="equip">
+        <datalist id="Equipments">
+            <option value="Gloves">
+            <option value="Pruning Shears">
+            <option value="Loopers">
+            <option value="Garden Fork">
+            <option value="IJH">
+            <option value="UCY">
+            <option value="ABC">
+            <option value="XYZ">
+        </datalist>
+        <br><br><br>
+        <h3>Upload Your Garden Art To win something exciting</h3><br>
+        <input type="file" id="myfile" name="myfile">
+        <br><br><br>
+        <h3>Terms And Conditions</h3>
+        <br>
+        <ol type="1">
+            <li>Data wil be used in future for marketing</li>
+            <li>Will receive E-mails regarding campaigns</li>
+            <li>Not responsible for loss of data</li>
+        </ol>
+        <br>
+        <input type="checkbox" id="agree" name="agree" value="agree">
+        <label for="o1" style="font-size: medium;">To submit the form, Check the box to agree the terms and conditions</label><br>
+        <br>
+
+        <input type="submit" value="Submit Form">
+    </form>
+    </div>
+</body>
+</html>
